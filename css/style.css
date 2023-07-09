@@ -1,0 +1,118 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    min-height: 740px;
+    background: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+}
+.step
+{
+    position: relative;
+    width: 1800px;
+    padding: 60px;
+    margin: 60px auto;
+    box-sizing: border-box;
+    font-family: georgia, serif;
+    font-size: 60px;
+    line-height: 1.5;
+}
+.impress-enabled .step
+{
+    margin: 0;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.impress-enabled .step.active
+{
+    opacity: 1;
+}
+.slide
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-direction: column;
+    width: 1850px;
+    height: 1000px;
+    font-size: 45px;
+    padding: 40px 60px;
+    border-radius: 30px;
+    letter-spacing: -2px;
+    background-color: #000;
+    border: 2px solid rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    text-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #fff;
+}
+a
+{
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: rgba(200,200,200,0.2);
+    text-shadow: -2px 2px 4px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+    border-bottom: 3px solid rgba(100,100,100,0.2);
+    border-left: 3px solid rgba(100,100,100,0.2);
+    transition: 0.5s;
+}
+a:hover,
+a:focus
+{
+    background: rgba(200,200,200,1);
+    text-shadow: -2px 2px 3px rgba(100,100,100,0.5);
+}
+small
+{
+    font-size: 0.4em;
+}
+.slide .right
+{
+    float: right;
+    margin-left: 60px;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.slide .left
+{
+    float: left;
+    margin-right: 60px;
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.slide .top
+{
+    position: absolute;
+    top: 40px;
+    margin-bottom: 40px;
+    margin-top: 0px;    
+}
+.slide .bottom
+{
+    position: absolute;
+    bottom: 40px;
+    margin-bottom: 0px;
+    margin-top: 40px;    
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title h1 
+{
+    font-size: 100px;
+}
